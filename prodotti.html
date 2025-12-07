@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@200..900&display=swap">
+	<link rel="stylesheet" href="./prodotti_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="icon" href="/LogoDeniBreak_bgless.png" type="image/x-icon">
+    <title>I nostri prodotti</title>
+</head>
+<body>
+<!-- navbar -->
+    <div id="navbar">
+        <div id="div_logo">
+            <img id="img_logo" src="./logo_chiaro.png"/>
+        </div>
+        <div id="div_link">
+            <a href="./index.html">Home</a>
+            <a href="./prodotti.html">Prodotti</a>
+            <a href="">Storia</a>
+            <a href="">Mission</a>
+            <a href="">Organizzazione</a>
+        </div>
+		<div id="div_login" onclick="window.location.href='login.html'">
+            <span class="material-symbols-outlined">person</span>
+        </div>
+    </div>
+
+<!-- Cosa facciamo  -->
+    <section id="cosa-facciamo">
+        <h1>Cosa facciamo</h1>
+
+        <div class="contenuto">
+            <p><strong>La nostra azienda si occupa di:</strong></p>
+            <ul>
+                <li>
+                    Installazione e gestione di <strong>distributori automatici</strong> di 
+                    <em>bevande calde</em>, <em>bevande fredde</em>, <em>snack</em>, <em>panini</em> 
+                    e <strong>caffè artigianale di qualità</strong>.
+                </li>
+                <li>
+                    Rifornimento periodico <strong>personalizzato</strong>, basato sui consumi 
+                    e sulle preferenze dei dipendenti/clienti.
+                </li>
+                <li>
+                    Offerta <strong>sostenibile</strong>, con materiali <em>compostabili</em>, 
+                    prodotti locali e opzioni salutari.
+                </li>
+            </ul>
+            <p>
+                La nostra azienda propone una <strong>vasta gamma di prodotti</strong>, spaziando da caffè, 
+                bevande e snack, con un occhio alla <strong>sostenibilità ambientale</strong> tramite 
+                <em>packaging ecologico</em>.  
+                Si distingue per l'adozione di <strong>tecnologie all'avanguardia</strong> come sistemi 
+                di pagamento <em>contactless</em> e mobile (inclusi app, Apple Pay, Samsung Pay), e strumenti 
+                di <strong>telemetria</strong> per il monitoraggio e la manutenzione in tempo reale.
+            </p>
+            <p>
+                Questi sistemi permettono un'esperienza di acquisto 
+                <strong>semplice, veloce e personalizzata</strong>, ideale per un pubblico 
+                <em>giovane e dinamico</em>.  
+                Ci impegniamo a fornire un <strong>servizio completo</strong>, con assistenza e 
+                manutenzione costanti, per garantire sempre 
+                <strong>efficienza</strong> e <strong>qualità nell'erogazione</strong>.
+            </p>
+        </div>
+    </section>
+
+<!-- Prodotti -->
+<div class="container_prodotti">
+    <section id="prodotti">
+        <div id="div_scopriProdotti">Scopri i nostri prodotti</div>
+        <div class="prodotti-container">
+            <div class="prodotto-row">
+                <img src="./distro_coffe_scuola.png" alt="Macchinette del Caffè" class="prodotto-img">
+                <div class="prodotto-info">
+                    <h3>DISTRIBUTORE AUTOMATICO MONVISO</h3>
+                    <p>Gusta un caffè caldo e cremoso in ogni pausa, a scuola o al lavoro.</p>
+                </div>
+            </div>
+
+            <div class="prodotto-row reverse">
+                <img src="./distro_snack_scuola.png" alt="Macchinette di Snack" class="prodotto-img">
+                <div class="prodotto-info">
+                    <h3>DISTRIBUTORE AUTOMATICO REFRIGERATO NAVIGATOR</h3>
+                    <p>Snack freschi e sfiziosi per rendere ogni pausa speciale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Caratteristiche -->
+<div id="caratteristiche">
+    <h1>Caratteristiche dei nostri prodotti</h1>
+
+    <div class="cards">
+        <div class="card">
+            <p>Le nostre macchine supportano pagamenti in <strong>contanti</strong> e tramite chiavetta <strong>contactless</strong>.</p>
+        </div>
+
+        <div class="card">
+            <p>Il distributore di bevande calde è dotato di un <strong>sistema di depurazione dell’acqua</strong>, con sostituzione regolare del filtro per garantire prestazioni ottimali.</p>
+        </div>
+
+        <div class="card">
+            <p>Il distributore di snack e bevande fredde è <strong>completamente refrigerato</strong> per una conservazione perfetta.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PDF prezzi -->
+ <div id="div_button_info">
+    <button onclick="window.open('offerta_denibreak.pdf', '_blank')" id="button_listinoPrezzi">
+    Scopri il nostro listino prezzi <span class="material-symbols-outlined" style="color:#39201E">arrow_right_alt</span>
+    </button>
+</div>
+
+
+
+<!-- footer -->
+    <hr style="width:90%; border:1px solid #E2AD78ff; margin-top: 150px;">
+    <footer>
+        <div>
+            <img id="img_logo_footer" src="./logo_chiaro.png"/>
+        </div>
+        <div>
+            <div id="footer_content">© 2025 DeniBreak. Tutti i diritti riservati.</div><br/>
+            <div id="footer_content">© Sito realizzato da LARA®</div><br/>
+            <a href="" id="link_footer_privacy">Politica Privacy</a>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" class="link_social"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="link_social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank" class="link_social"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/NUMEROTELEFONO" target="_blank" class="link_social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+        </div>
+    </footer>
+    <div id="footer_info">
+        <span>Via della Chiesa 17 – 12037 Saluzzo (CN)</span>
+        <span>P.IVA/COD.FISC 20252026280</span>
+        <span>0175/43625</span>
+        <span>denibreak@simulimpresa.com</span>
+    </div>
+</body>
+</html>
