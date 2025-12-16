@@ -1,0 +1,287 @@
+/*--- FILE BASE CSS CON REGOLE PER NAVBAR E FOOTER---*/
+
+body{
+    margin: 0;  /*tolgo il bordo attorno*/
+    background-color: #39201Eff;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;   
+}
+
+/*navbar*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1; /*sopra l'overlay*/
+}
+
+#div_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 120px; /* Aumenta la dimensione massima, senza spostare la navbar */
+    width: auto;       /* Mantieni le proporzioni corrette */ 
+}
+
+#div_login{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#div_login:hover{
+    cursor: pointer;
+}
+
+/*icona login*/
+#icona_login{
+    color:#E2AD78ff;
+    margin-right:20px;
+    font-size:40px;
+}
+
+/*link con bordo arrotondato*/
+#div_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2AD78ff;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/*stile dei singoli link*/
+#div_link a {
+    text-decoration: none;
+    color: #E2AD78ff;
+    padding: 10px 20px;   
+    border-radius: 20px;    
+    display: flex;          
+    align-items: center;
+}
+
+#div_link a.active {
+    border: 1px solid #E2AD78ff;
+    color: #ffffff;
+    background-color: rgba(226, 173, 120, 0.15);
+}
+
+/*hover sui link*/
+#div_link a:hover {
+    border: 1px solid #E2AD78ff;
+    color: #ffffff;
+}
+
+/* footer */
+footer{
+    color: #E2AD78ff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#link_footer_privacy{
+    color: #E2AD78ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+#img_logo_footer{
+    height: 300px;
+}
+
+.social-links{
+    color: #E2AD78ff;
+    margin-top:15px; 
+}
+
+.link_social{
+    color: #E2AD78ff;
+    margin: 20px 15px 10px 15px; 
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+#footer_info{
+    display:flex;
+    justify-content:center;
+    gap: 50px;
+    color:#E2AD78ff;
+    font-size:14px;
+    flex-wrap:wrap;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+h1, h2 {
+    color: #E2AD78ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.intro {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    color: #E2AD78ff;
+}
+
+
+
+.function-box:hover {
+    transform: translateY(-5px);
+}
+
+.function-box h3 {
+    margin-bottom: 15px;
+    color: #39201Eff;
+}
+
+/* Centrare tutti i titoli */
+h1, h2 {
+    color: #E2AD78ff;
+    text-align: center;
+}
+
+/* Funzioni principali */
+.functions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center; /* centra la griglia nel container */
+    justify-items: center;   /* centra le card nella loro cella */
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.functions_2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center; /* centra la griglia nel container */
+    justify-items: center;   /* centra le card nella loro cella */
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+/* Centrare il contenuto delle card */
+.function-box {
+    background: #E2AD78ff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    text-align: center;  /* centra testo e icona nel box */
+}
+
+/* Media section già centrata */
+.media-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center; /* centra le card se righe incomplete */
+    margin-bottom: 50px;
+}
+
+
+.media-box {
+    flex: 1 1 500px;
+    background: #E2AD78ff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.media-box:hover {
+    transform: translateY(-5px);
+}
+
+.media-box img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 55px;
+}
+
+@media (max-width: 900px) {
+    .media-section {
+    flex-direction: column;
+    }
+}
+
+#container_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #E2AD78ff;
+    border-radius: 15px;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    color: #E2AD78ff;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #E2AD78ff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #39201Eff;
+    color: #E2AD78ff;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #E2AD78ff;
+}
+
+button{
+    background-color: #E2AD78ff;
+    color: #39201Eff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-family: Zalando Sans Expanded, sans-serif;
+}
+
+button:hover{
+    transform: scale(1.05);
+}

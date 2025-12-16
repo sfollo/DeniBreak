@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=+, initial-scale=1.0">
+	<title>DeniBreak - Home</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=person" />
+	<link rel="stylesheet" href="/css/index_style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="icon" href="/img/LogoDeniBreak_bgless.png" type="image/x-icon">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+	</style>
+</head>
+<body>
+	<div id="container">
+<!-- navbar -->
+		<div id="navbar">
+			<div id="div_logo">
+				<img id="img_logo" src="/img/logo_chiaro.png"/>
+			</div>
+			<div id="div_link">
+            <a href="./index.html">Home</a>
+            <a href="./prodotti.html">Prodotti</a>
+            <a href="storia.html">Storia</a>
+            <a href="mission.html">Mission</a>
+            <a href="organizzazione.html">Organizzazione</a>
+			</div>
+			<div id="div_login" onclick="window.location.href='login.html'">
+				<span id="icona_login" class="material-symbols-outlined">person</span>
+			</div>
+		</div>
+<!-- titolo e sottotitolo -->
+		<div>
+			<div id="div_title">DeniBreak</div>
+			<div id="div_sottoTitolo">La scelta perfetta per rendere uniche le tue pause</div>
+		</div>
+	</div>
+	<div id="container_bottom">
+		<div id="title_container_bottom">Sei a scuola o al lavoro e senti che ti manca qualcosa?</div>
+		<div id="content_container_bottom">Allora DeniBreak è ciò che fa al caso tuo!<br/>Che tu abbia bisogno di una carica di energia o di uno snack sfizioso,<br/>DeniBreak è al tuo fianco per rendere ogni pausa più piacevole e conveniente.<br/></div>
+	</div>
+<!-- link prodotti -->
+ 	<div class="container_prodotti">
+		<section id="prodotti">
+			<div id="div_scopriProdotti">Scopri i nostri prodotti</div>
+			<div class="prodotti-container">
+				<div class="prodotto-card">
+					<img src="/img/distro_coffe_scuola.png" alt="Macchinette del Caffè">
+					<h3>Macchinette del Caffè</h3>
+					<p>Gusta un caffè caldo e cremoso in ogni pausa, a scuola o al lavoro.</p>
+					<a href="/html/prodotti.html"><button class="button_scopri">Scopri</button></a>
+				</div>
+				<div class="prodotto-card">
+					<img src="/img/distro_snack_scuola.png" alt="Macchinette di Snack">
+					<h3>Macchinette di Snack</h3>
+					<p>Snack freschi e sfiziosi per rendere ogni pausa speciale.</p>
+					<a href="/html/prodotti.html"><button class="button_scopri">Scopri</button></a>
+				</div>
+			</div>
+		</section>
+	</div>
+<!-- dicono di noi -->
+ 	<div class="container_prodotti">
+		<div id="container_testimonial">
+			<div id="div_diconoDiNoi">Dicono di noi...</div>
+			<div id="container_dentro">
+				<div class="recensione">
+					<p>"Servizio veloce e macchinette sempre perfette!"</p>
+					<h4>Mario Rossi</h4>
+				</div>
+				<div class="recensione">
+					<p>"Gli snack sono sempre freschi, ottimo per le pause a scuola."</p>
+					<h4>Laura Bianchi</h4>
+				</div>
+				<div class="recensione">
+					<p>"Consiglio DeniBreak a tutte le aziende: qualità e affidabilità."</p>
+					<h4>Marco Verdi</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr style="width:90%; border:1px solid #E2AD78ff; margin-top: 150px;">
+<!-- footer -->
+	<footer>
+		<div>
+			<img id="img_logo_footer" src="/img/logo_chiaro.png"/>
+		</div>
+		<div>
+			<div id="footer_content">© 2025 DeniBreak. Tutti i diritti riservati.</div><br/>
+			<div id="footer_content">© Sito realizzato da LARA®</div><br/>
+			<a href="" id="link_footer_privacy">Politica Privacy</a>
+			<div class="social-links">
+				<a href="https://www.facebook.com" target="_blank" class="link_social"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com" target="_blank" class="link_social"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.tiktok.com" target="_blank" class="link_social"><i class="fab fa-tiktok"></i></a>
+				<a href="https://wa.me/NUMEROTELEFONO" target="_blank" class="link_social"><i class="fab fa-whatsapp"></i></a>
+   			</div>
+		</div>
+	</footer>
+	<div id="footer_info">
+        <span>Via della Chiesa 17 – 12037 Saluzzo (CN)</span>
+        <span>P.IVA/COD.FISC 20252026280</span>
+        <span>0175/43625</span>
+        <span>denibreak@simulimpresa.com</span>
+    </div>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll("#div_link a").forEach(link => {
+        const linkPage = link.getAttribute("href").replace("./", "");
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+</html>

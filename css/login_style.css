@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/*sfondo*/
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/sfondo_login.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);           
+    opacity: 0.7;                 
+    z-index: -1; /*dietro ai div*/
+}
+
+/* Contenitore login */
+#login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #39201E;
+    color: #E2AD78ff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 300px;
+}
+
+/* Form e input/button */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #E2AD78ff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #39201Eff;
+    color: #E2AD78ff;
+    font-family: Zalando Sans Expanded, sans-serif;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #E2AD78ff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #39201Eff;
+    box-shadow: 0 0 5px rgba(57, 32, 30, 0.5);
+}
+
+button {
+    background-color: #E2AD78ff;
+    color: #39201E;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #39201E;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+button:hover {
+    background-color: #39201E;
+    color: #E2AD78ff;
+    border-color: #E2AD78ff;
+}
+
+/* Freccia back */
+#arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background-color: #E2AD78ff;
+    border-radius: 5px;
+    color: #39201E;
+    transition: 0.3s;
+}
+
+#arrow:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

@@ -1,0 +1,389 @@
+body{
+    margin: 0;  /*tolgo il bordo attorno*/
+    background-color: #39201Eff;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;   
+}
+/*navbar*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1; /*sopra l'overlay*/
+}
+
+#div_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 120px; /* Aumenta la dimensione massima, senza spostare la navbar */
+    width: auto;       /* Mantieni le proporzioni corrette */ 
+}
+
+#div_login{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#div_login:hover{
+    cursor: pointer;
+}
+
+/*icona login*/
+#icona_login{
+    color:#E2AD78ff;
+    margin-right:20px;
+    font-size:40px;
+}
+
+/*link con bordo arrotondato*/
+#div_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2AD78ff;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/*stile dei singoli link*/
+#div_link a {
+    text-decoration: none;
+    color: #E2AD78ff;
+    padding: 10px 20px;   
+    border-radius: 20px;    
+    display: flex;          
+    align-items: center;
+}
+
+#div_link a.active {
+    border: 1px solid #E2AD78ff;
+    color: #ffffff;
+    background-color: rgba(226, 173, 120, 0.15);
+}
+
+/*hover sui link*/
+#div_link a:hover {
+    border: 1px solid #E2AD78ff;
+    color: #ffffff;
+}
+
+footer{
+    color: #E2AD78ff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#link_footer_privacy{
+    color: #E2AD78ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+#img_logo_footer{
+    height: 300px;
+}
+
+.social-links{
+    color: #E2AD78ff;
+    margin-top:15px; 
+}
+
+.link_social{
+    color: #E2AD78ff;
+    margin: 20px 15px 10px 15px; 
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+#footer_info{
+    display:flex;
+    justify-content:center;
+    gap: 50px;
+    color:#E2AD78ff;
+    font-size:14px;
+    flex-wrap:wrap;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+#caratteristiche{
+    color: #E2AD78ff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#caratteristiche {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#caratteristiche h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #E2AD78ff;
+}
+
+/* Contenitore delle card */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap; /*card che non vanno a capo*/
+}
+
+/* Singola card */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E2AD78ff;
+    color: #39201Eff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.02);
+}
+
+/* Sezione generale */
+#cosa-facciamo {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    color: #E2AD78ff;
+}
+
+#cosa-facciamo h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #E2AD78ff;
+    letter-spacing: 1px;
+}
+
+#cosa-facciamo .contenuto {
+    background: #E2AD78ff;
+    color: #39201Eff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+    font-weight: 500;
+}
+
+.contenuto:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.02);
+}
+
+#cosa-facciamo ul {
+    margin: 15px 0 20px 0;
+    padding-left: 20px;
+}
+
+#cosa-facciamo ul li {
+    margin: 8px 0;
+}
+
+.container_prodotti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#prodotti{
+    background-color: #39201E;
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px solid #E2AD78ff;
+    border-radius: 10px;
+    width:80%;
+}
+
+#div_scopriProdotti{
+    color: #E2AD78ff;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.prodotti-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.prodotto-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+/*inverte ordine testo eimg*/
+.prodotto-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.prodotto-img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Box info */
+.prodotto-info {
+    background: #E2AD78ff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Testi */
+.prodotto-info h3 {
+    color: #39201E;
+    margin-bottom: 10px;
+}
+
+.prodotto-info p {
+    color: #39201E;
+    line-height: 1.6;
+}
+
+#div_button_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#button_listinoPrezzi {
+    background-color: #E2AD78ff;
+    color: #39201E;
+    border: 2px solid #E2AD78ff;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#button_listinoPrezzi:hover {
+    transform: scale(1.05);
+}
+
+#sostenibilita {
+    max-width: 1100px;
+    margin: 120px auto;
+    padding: 20px;
+    color: #E2AD78ff;
+    text-align: center;
+}
+
+#sostenibilita h1 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.sostenibilita-box {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    background: #E2AD78ff;
+    color: #39201E;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+}
+
+/* lato sinistro */
+.sostenibilita-img {
+    width: 35%;
+    background: linear-gradient(135deg, #39201E, #2a1514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sostenibilita-img i {
+    font-size: 120px;
+    color: #E2AD78ff;
+}
+
+/* lato destro */
+.sostenibilita-text {
+    width: 65%;
+    padding: 40px;
+    text-align: left;
+}
+
+.sostenibilita-text h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.sostenibilita-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.sostenibilita-text ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.sostenibilita-text ul li {
+    margin-bottom: 10px;
+}
+
+.sostenibilita-text .finale {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+/* hover elegante */
+.sostenibilita-box:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease;
+}
